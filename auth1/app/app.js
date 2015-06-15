@@ -30,6 +30,9 @@ angular.module('authDemo1', ['ngRoute'])
 		})
 	})
 	.factory('userSession', function() {
+
+		// this is not secure! you'd want to use a closure with getter/setter
+    	// methods here to make the loggedIn value private
 		return {
 			loggedIn: false
 		}
